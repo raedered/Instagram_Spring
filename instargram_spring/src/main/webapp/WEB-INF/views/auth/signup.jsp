@@ -19,7 +19,7 @@
             <div class="content-box">
                 <div class="item-box">
                     <div class="item-group">
-                        <h1 class="b-logo"><img src="/app/static/images/instagram.PNG"></h1>
+                        <h1 class="b-logo"><img src="/app/static/images/instagram.png"></h1>
                         <form action="">
                             <div class="signup-items">
                                 <h2 class="signup-title">친구들의 사진과 동영상을 보려면 가입하세요.</h2>
@@ -35,7 +35,7 @@
                                     <div class="input-group">
                                         <div class="input-data">
                                             <label for="phone-or-email">휴대폰 번호 또는 이메일 주소</label>
-                                            <input type="text" id="phone-or-email" name=phone-or-email>
+                                            <input type="text" id="phone-or-email" name=phoneOrEmail>
                                         </div>
                                         <div class="input-msg">
                                         </div>
@@ -64,6 +64,7 @@
                                         <div class="input-msg">
                                         </div>
                                         <div class="password-visible">비밀번호 표시</div>
+
                                     </div>
                                     <button type="button" class="submit-btn">가입</button>
                                 </div>
@@ -74,13 +75,13 @@
                         <p>계정이 있으신가요? <a href="auth.html">로그인</a></p>
                     </div>
                     <div class="download-img">
-                        <img src="/app/static//images/download.png">
+                        <img src="/app/static/images/download.png">
                     </div>
                 </div>
             </div>
         </main>
     </section>
-    <script src="/static/js/signup.js"></script>
+    <script src="/app/static/js/signup.js"></script>
 </body>
 
 </html>
