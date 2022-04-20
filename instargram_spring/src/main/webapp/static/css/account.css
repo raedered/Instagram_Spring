@@ -1,0 +1,42 @@
+.contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px auto 0px;
+    width: 935px;
+    height: 871px;
+
+    background-color: #ffffff;
+}
+
+.m-box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    border: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+
+    width: 237px;
+    height: 869px;
+}
+
+
+
+.p-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #dbdbdb;
+
+    width: 696px;
+    height: 869px;
+
+}
+
+.p-img {
+    
+
+}
