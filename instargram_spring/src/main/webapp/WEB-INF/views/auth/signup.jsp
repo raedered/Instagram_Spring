@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/app/static/css/style.css">
     <link rel="stylesheet" href="/app/static/css/signup.css">
     <script src="https://kit.fontawesome.com/ede2458143.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <div class="item-box">
                     <div class="item-group">
                         <h1 class="b-logo"><img src="/app/static/images/instagram.png"></h1>
-                        <form action="">
+                        <form action="/app/auth/signup" method="post">
                             <div class="signup-items">
                                 <h2 class="signup-title">친구들의 사진과 동영상을 보려면 가입하세요.</h2>
                                 <div class="facebook-login">
