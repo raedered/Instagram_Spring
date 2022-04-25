@@ -21,7 +21,7 @@ public class AuthResponseScript {
 	
 	public String signinValidScript(String msg) {
 		StringBuilder script = new StringBuilder();
-		
+		System.out.println(msg);
 		script.append("<script>");
 		script.append("alert(\"" + msg + "\");");
 		script.append("location.replace(\"/app/auth/signin\");");
