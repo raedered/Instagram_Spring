@@ -19,7 +19,7 @@
                         <li><i class="fa-solid fa-square-plus"></i></li>
                         <li>
                             <div class="profile-img-border">
-                                <img class="profile-img" src="/app/static/images/img.png" alt="">
+                                <a href="/app/profile/account"><img class="profile-img" src="/app/static/images/img.png" alt="">
                             </div>
                         </li>
                    </ul>
