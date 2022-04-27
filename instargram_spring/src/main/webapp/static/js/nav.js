@@ -5,7 +5,6 @@ bLogo.onclick = () => {
 	location.href = "/app/";
 }
 
-prifileImg.onclick = () => {
-	location.href = "/app/account/profile"
+profileImg.onclick = () => {
+	location.href = "/app/account/profile";
 }
-

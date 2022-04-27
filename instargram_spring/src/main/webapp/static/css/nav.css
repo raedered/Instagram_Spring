@@ -1,15 +1,15 @@
 .nav-container {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
-    
+
     border-width: 0px 0px 1px;
     border-color: #dbdbdb;
     border-style: solid;
 
     background-color: white;
 }
-    
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -25,13 +25,13 @@
     align-items: center;
 
     width: 120px;
-
 }
 
 .b-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+
     width: 103px;
     height: 29px;
 
@@ -44,24 +44,24 @@
 
 .nav-bar-search-box {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
+
     border-radius: 7px;
     padding: 0px 16px;
 
     height: 36px;
 
-    border-color: #efefef;
+    background-color: #efefef;
 }
 
 .nav-bar-search-input {
     display: flex;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
-    
+
     width: 236px;
     height: 25px;
-
 }
 
 .nav-bar-search-input input {
@@ -85,8 +85,8 @@
     cursor: pointer;
 }
 
-.nav-bar-items li i{
-    font-size:21px
+.nav-bar-items li i {
+    font-size: 21px;
 }
 
 .profile-img-border {
@@ -102,10 +102,10 @@
     overflow: hidden;
 }
 
-.profile-img-border img{
+.profile-img-border img {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	width: 24px;
+    justify-content: center;
+    align-items: center;
+    
+    width: 24px;
 }

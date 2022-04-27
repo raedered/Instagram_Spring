@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -9,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>instagram</title>
     <link rel="stylesheet" href="/app/static/css/account.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 
 <body>
@@ -19,42 +20,42 @@
             <div id="container">
                 <article>
                     <section class="side-bar">
-                        <div class="side-bar-item clicked" >
-                            <b>프로필 편집</b>
+                        <div class="side-bar-item clicked">
+                            <h3>프로필 편집</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>비밀번호 변경</b>
+                            <h3>비밀번호 변경</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>앱 및 웹 사이트</b>
+                            <h3>앱 및 웹사이트</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>이메일 알림</b>
+                            <h3>이메일 알림</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>푸시 알림</b>
+                            <h3>푸시 알림</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>연락처 관리</b>
+                            <h3>연락처 관리</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>개인정보 및 보안</b>
+                            <h3>개인정보 및 보안</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>로그인 활동</b>
+                            <h3>로그인 활동</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>instagram에서 보낸 이메일</b>
+                            <h3>instagram에서 보낸 이메일</h3>
                         </div>
                         <div class="side-bar-item">
-                            <b>도움말</b>
+                            <h3>도움말</h3>
                         </div>
-                    </section >
+                    </section>
                     <section class="profile-box">
                         <form class="profile-box-form1">
                             <div class="box-item-left">
                                 <div class="profile-img-round">
-                                    <img src="images/img.png">
+                                    <img src="/app/static/images/profile.PNG">
                                 </div>
                             </div>
                             <div class="box-item-right">
@@ -70,12 +71,12 @@
                                 <div class="box-item-right">
                                     <div class="input-items">
                                         <input type="text" id="name" class="text-input" name="name" value="김재현">
-                                        <div class="input-explantion">
-                                            <div class="explantion-text1">
+                                        <div class="input-explanation">
+                                            <div class="explanation-text1">
                                                 사람들이 이름, 별명 또는 비즈니스 이름 등 회원님의 알려진 이름을
                                                 사용하여 회원님의 계정을 찾을 수 있도록 도와주세요.
                                             </div>
-                                            <div class="explantion-text2">
+                                            <div class="explanation-text2">
                                                 이름은 14일 안에 두 번만 변경할 수 있습니다.
                                             </div>
                                         </div>
@@ -88,11 +89,12 @@
                                 </div>
                                 <div class="box-item-right">
                                     <div class="input-items">
-                                        <input type="text" id="username" class="text-input" name="username" value="jaehyeon">
-                                        <div class="input-explantion">
-                                            <div class="explantion-text1">
+                                        <input type="text" id="username" class="text-input" name="username"
+                                            value="jaehyeon">
+                                        <div class="input-explanation">
+                                            <div class="explanation-text1">
                                                 In most cases, you'll be able to change your username back to
-                                                undefined for another undefined days. 더 알아보기
+                                                undefined for another undefined days.
                                             </div>
                                         </div>
                                     </div>
@@ -104,7 +106,7 @@
                                 </div>
                                 <div class="box-item-right">
                                     <div class="input-items">
-                                        <input type="text" id="website" class="text-input" name="website" value="웹사이트">
+                                        <input type="text" id="website" class="text-input" name="website">
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +126,8 @@
                                 </div>
                                 <div class="box-item-right">
                                     <div class="input-items">
-                                        <input type="text" id="email" class="text-input" name="email" value="kjh991216@naver.com">
+                                        <input type="text" id="email" class="text-input" name="email"
+                                            value="kjh991216@naver.com">
                                     </div>
                                 </div>
                             </div>
@@ -134,7 +137,8 @@
                                 </div>
                                 <div class="box-item-right">
                                     <div class="input-items">
-                                        <input type="text" id="phone" class="text-input" name="phone" value="010-9788-3714">
+                                        <input type="text" id="phone" class="text-input" name="phone"
+                                            value="+82 10-9788-3714">
                                         <button type="button" class="phone-check-btn">휴대폰 번호 확인</button>
                                     </div>
                                 </div>
@@ -170,6 +174,7 @@
 
         </footer>
     </section>
+    <script type="text/javascript" src="/app/static/js/principal.js"></script>
     <script type="text/javascript" src="/app/static/js/account.js"></script>
 </body>
 
