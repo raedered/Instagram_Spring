@@ -47,7 +47,7 @@ submitBtn.onclick = () => {
 		url: "/app/profile/account/update",
 		data: JSON.stringify(account),
 		contentType: "application/json; charset=utf-8",
-		dateType: "text",
+		dataType: "text",
 		success: function(data){
 			if(data == "true"){
 				alert("회원정보 수정 완료.")
