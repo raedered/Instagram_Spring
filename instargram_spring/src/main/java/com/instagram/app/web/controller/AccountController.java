@@ -21,9 +21,6 @@ import com.instagram.app.web.dto.account.AccountResponseDto;
 import com.instagram.app.web.dto.account.AccountUpdateReqDto;
 import com.instagram.app.web.dto.account.PasswordUpdateRepDto;
 
-import lombok.RequiredArgsConstructor;
-import lombok.val;
-
 @Controller
 public class AccountController {
 	@Autowired
