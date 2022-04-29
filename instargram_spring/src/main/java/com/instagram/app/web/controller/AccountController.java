@@ -12,12 +12,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.instagram.app.auth.PrincipalService;
 import com.instagram.app.domain.user.User;
 import com.instagram.app.service.AuthService;
 import com.instagram.app.service.ProfileService;
 import com.instagram.app.web.dto.account.AccountResponseDto;
+import com.instagram.app.web.dto.account.AccountUpdateImgReqDto;
 import com.instagram.app.web.dto.account.AccountUpdateReqDto;
 import com.instagram.app.web.dto.account.PasswordUpdateRepDto;
 
@@ -55,5 +57,14 @@ public class AccountController {
 		}
 		
 		return Boolean.toString(profileService.updatePassword(user, passwordUpdateRepDto));
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/profile/account/update/img", method = RequestMethod.POST)
+	public String updateProfileImg(HttpServletRequest request, AccountUpdateImgReqDto accountUpdateImgReqDto) {
+		HttpSession session = request.getSession();
+		User user = (User)session.getAttribute("principal");
+		boolean result = profileService.updateProfileImg(user, accountUpdateImgReqDto);
+		return Boolean.toString(result);
 	}
 }

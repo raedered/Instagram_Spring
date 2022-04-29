@@ -45,6 +45,7 @@ public class AuthController {
 			//session
 			HttpSession session = request.getSession();
 			session.setAttribute("principal", user);
+//			session.setAttribute("profileImg", )
 		}else {
 			//로그인 실패 메세지 전달
 			return "redirect: /app/auth/signin/error?msg=" + URLEncoder.encode("로그인 정보를 확인해주세요.", "UTF-8");

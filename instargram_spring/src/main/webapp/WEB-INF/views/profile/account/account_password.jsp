@@ -63,13 +63,13 @@
                                 </div>
                             </div>
                             <div class="box-item-right">
-                                <h1 class="profile-username">jaehyeon</h1>
+                                <h1 class="profile-username username-sizeup">jaehyeon</h1>
                             </div>
                         </form>
-                        <form class="profile-box-form2">
+                        <form class="profile-box-form2" enctype="application/json">
                             <div class="box-items">
                                 <div class="box-item-left">
-                                    <label for="name">이전 비밀번호</label>
+                                    <label for="origin-password">이전 비밀번호</label>
                                 </div>
                                 <div class="box-item-right">
                                     <div class="password-input-items">
@@ -79,7 +79,7 @@
                             </div>
                             <div class="box-items">
                                 <div class="box-item-left">
-                                    <label for="name">새 비밀번호</label>
+                                    <label for="new-password">새 비밀번호</label>
                                 </div>
                                 <div class="box-item-right">
                                     <div class="password-input-items">
@@ -89,7 +89,7 @@
                             </div>
                             <div class="box-items">
                                 <div class="box-item-left">
-                                    <label for="name">새 비밀번호확인</label>
+                                    <label for="new-repassword">새 비밀번호확인</label>
                                 </div>
                                 <div class="box-item-right">
                                     <div class="password-input-items">
