@@ -60,7 +60,7 @@ public class ProfileServiceImpl implements ProfileService{
 			String imageFileName = accountUpdateImgReqDto.getFile().getOriginalFilename();
 			String tempImageFileName = UUID.randomUUID().toString().replaceAll("-", "") + "_" + imageFileName;
 			final String path = FileConfig.profileImgPath;
-			Path imageFilePath = Paths.get(path + "\\" + tempImageFileName);
+			Path imageFilePath = Paths.get(path + "/" + tempImageFileName);
 			
 			File file = new File(path);
 			if(!file.exists()) {
@@ -69,7 +69,6 @@ public class ProfileServiceImpl implements ProfileService{
 			try {
 				Files.write(imageFilePath, accountUpdateImgReqDto.getFile().getBytes());
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			

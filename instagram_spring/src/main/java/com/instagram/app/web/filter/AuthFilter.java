@@ -1,10 +1,6 @@
 package com.instagram.app.web.filter;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -17,21 +13,20 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Component;
 
+import com.instagram.app.config.FileConfig;
 import com.instagram.app.domain.user.User;
 
 @Component
 public class AuthFilter implements Filter{
-	
+
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		
+		FileConfig.profileImgPath = filterConfig.getServletContext().getRealPath("/static/fileupload");
 	}
-	
+
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		
-		System.out.println("필터가 실행되었습니다.");
 		
 		HttpServletRequest httpServletRequest = (HttpServletRequest)request;
 		HttpServletResponse httpServletResponse = (HttpServletResponse)response;
@@ -41,25 +36,27 @@ public class AuthFilter implements Filter{
 		
 		String path = httpServletRequest.getRequestURI();
 		
-		if(path.contains("/app/auth")) {
+		if(path.contains("/app/auth")){
 			if(user != null) {
 				httpServletResponse.sendRedirect("/app/");
 				return;
 			}
-		}else if(path.contains("/app/static")){
+		}else if(path.contains("/app/static")) {
 			
 		}else {
 			if(user == null) {
 				httpServletResponse.sendRedirect("/app/auth/signin");
-			}			
+				return;
+			}
 		}
-
+		
 		chain.doFilter(httpServletRequest, httpServletResponse);
 		
 	}
-	
+
 	@Override
 	public void destroy() {
 		
 	}
+
 }
