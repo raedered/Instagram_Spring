@@ -2,6 +2,7 @@ package com.instagram.app.web.controller;
 
 import java.lang.reflect.Field;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -61,7 +62,7 @@ public class AccountController {
 	
 	@ResponseBody
 	@RequestMapping(value = "/profile/account/update/img", method = RequestMethod.POST)
-	public String updateProfileImg(HttpServletRequest request, AccountUpdateImgReqDto accountUpdateImgReqDto) {
+	public String updateProfileImg(HttpServletRequest request, AccountUpdateImgReqDto accountUpdateImgReqDto) {		
 		HttpSession session = request.getSession();
 		User user = (User)session.getAttribute("principal");
 		boolean result = profileService.updateProfileImg(user, accountUpdateImgReqDto);

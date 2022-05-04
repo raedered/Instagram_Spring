@@ -59,8 +59,8 @@ public class ProfileServiceImpl implements ProfileService{
 		if(accountUpdateImgReqDto.getFile() != null) {
 			String imageFileName = accountUpdateImgReqDto.getFile().getOriginalFilename();
 			String tempImageFileName = UUID.randomUUID().toString().replaceAll("-", "") + "_" + imageFileName;
-			final String path = FileConfig.profileImgPath;
-			Path imageFilePath = Paths.get(path + "\\" + tempImageFileName);
+			String path = FileConfig.profileImgPath;
+			Path imageFilePath = Paths.get(path + "/" + tempImageFileName);
 			
 			File file = new File(path);
 			if(!file.exists()) {
