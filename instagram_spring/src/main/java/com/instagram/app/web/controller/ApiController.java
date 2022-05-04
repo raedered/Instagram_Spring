@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.instagram.app.auth.PrincipalService;
-import com.instagram.app.config.FileConfig;
 import com.instagram.app.domain.user.User;
 
 @Controller

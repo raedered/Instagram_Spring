@@ -1,8 +1,5 @@
 package com.instagram.app.web.controller;
 
-import java.lang.reflect.Field;
-
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -13,11 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
-
 import com.instagram.app.auth.PrincipalService;
 import com.instagram.app.domain.user.User;
-import com.instagram.app.service.AuthService;
 import com.instagram.app.service.ProfileService;
 import com.instagram.app.web.dto.account.AccountResponseDto;
 import com.instagram.app.web.dto.account.AccountUpdateImgReqDto;
