@@ -21,6 +21,7 @@ import com.instagram.app.web.dto.account.AccountUpdateImgReqDto;
 import com.instagram.app.web.dto.account.AccountUpdateReqDto;
 import com.instagram.app.web.dto.account.PasswordUpdateRepDto;
 
+
 @Service
 public class ProfileServiceImpl implements ProfileService{
 	
