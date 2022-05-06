@@ -36,4 +36,12 @@ public class AuthServiceImpl implements AuthService{
 		}
 		return user; // 결과가 true가 나와야지 로그인이 된다.
 	}
+	
+	
+/*
+ * 아이디, 비밀번호
+ * 아이디 DB조회
+ * User 객체
+ * 비밀번호만 가지고 와서 BCrypt로 암호비교
+ */
 }
