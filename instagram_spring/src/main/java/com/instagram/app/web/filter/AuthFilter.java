@@ -27,7 +27,10 @@ public class AuthFilter implements Filter{
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
+<<<<<<< HEAD
 		
+=======
+>>>>>>> b3dd2ba818eb727aabea63c3ebd6370c0444fffa
 		HttpServletRequest httpServletRequest = (HttpServletRequest)request;
 		HttpServletResponse httpServletResponse = (HttpServletResponse)response;
 		

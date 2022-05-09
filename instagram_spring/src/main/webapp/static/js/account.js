@@ -112,9 +112,15 @@ function imgChange() {
 					encType: "multipart/form-data",
 					processData: false,
 					contentType: false,
+<<<<<<< HEAD
 					dataType: "text",
 					success: function(data) {
 						alert("프로필 이미지가 변경되었습니다.");
+=======
+					dataType:"text",
+					success: function(data){
+						alert("프로필 이미지가 변경되었습니다.")
+>>>>>>> b3dd2ba818eb727aabea63c3ebd6370c0444fffa
 						location.reload();
 					},
 					error: function(){

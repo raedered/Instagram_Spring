@@ -11,7 +11,7 @@
 		from
 			user_mst
 		where
-			username = #{username};
+			username = #{username}; <!-- parameter 표현식 -->
 	</select>
 	
 	<insert id="signup" parameterType="com.instagram.app.domain.user.User">

@@ -13,6 +13,10 @@ function getPrincipal(){
 		}
 	});
 	return principal;
+<<<<<<< HEAD
+=======
+	
+>>>>>>> b3dd2ba818eb727aabea63c3ebd6370c0444fffa
 }
 
 function getProfileImg(){
@@ -28,6 +32,7 @@ function getProfileImg(){
 		error: function(){
 			alert("비동기 처리 오류");
 		}
+<<<<<<< HEAD
 	})
 	return imgUrl;
 }
@@ -36,3 +41,8 @@ function getProfileImg(){
 
 
 
+=======
+	});
+	return imgUrl;
+}
+>>>>>>> b3dd2ba818eb727aabea63c3ebd6370c0444fffa

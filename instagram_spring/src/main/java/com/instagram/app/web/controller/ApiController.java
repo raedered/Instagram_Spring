@@ -17,7 +17,11 @@ public class ApiController {
 	
 	@Autowired
 	private PrincipalService principalService;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> b3dd2ba818eb727aabea63c3ebd6370c0444fffa
 	@ResponseBody
 	@RequestMapping(value = "/api/principal", method = RequestMethod.GET, produces = "application/json; charset=utf-8")
 	public User getPrincipal(HttpServletRequest request) {
@@ -31,5 +35,9 @@ public class ApiController {
 		HttpSession session = request.getSession();
 		return "/app/static/fileupload/" + principalService.getProfileImg(((User)session.getAttribute("principal")).getUsercode()).getImg_url();
 	}
+<<<<<<< HEAD
 	
 }
+=======
+}
+>>>>>>> b3dd2ba818eb727aabea63c3ebd6370c0444fffa

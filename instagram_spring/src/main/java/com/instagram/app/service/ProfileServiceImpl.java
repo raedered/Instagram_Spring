@@ -21,6 +21,7 @@ import com.instagram.app.web.dto.account.AccountUpdateImgReqDto;
 import com.instagram.app.web.dto.account.AccountUpdateReqDto;
 import com.instagram.app.web.dto.account.PasswordUpdateRepDto;
 
+
 @Service
 public class ProfileServiceImpl implements ProfileService{
 	
@@ -59,7 +60,11 @@ public class ProfileServiceImpl implements ProfileService{
 		if(accountUpdateImgReqDto.getFile() != null) {
 			String imageFileName = accountUpdateImgReqDto.getFile().getOriginalFilename();
 			String tempImageFileName = UUID.randomUUID().toString().replaceAll("-", "") + "_" + imageFileName;
+<<<<<<< HEAD
 			final String path = FileConfig.profileImgPath;
+=======
+			String path = FileConfig.profileImgPath;
+>>>>>>> b3dd2ba818eb727aabea63c3ebd6370c0444fffa
 			Path imageFilePath = Paths.get(path + "/" + tempImageFileName);
 			
 			File file = new File(path);

@@ -56,7 +56,7 @@ public class AccountController {
 	
 	@ResponseBody
 	@RequestMapping(value = "/profile/account/update/img", method = RequestMethod.POST)
-	public String updateProfileImg(HttpServletRequest request, AccountUpdateImgReqDto accountUpdateImgReqDto) {
+	public String updateProfileImg(HttpServletRequest request, AccountUpdateImgReqDto accountUpdateImgReqDto) {		
 		HttpSession session = request.getSession();
 		User user = (User)session.getAttribute("principal");
 		boolean result = profileService.updateProfileImg(user, accountUpdateImgReqDto);

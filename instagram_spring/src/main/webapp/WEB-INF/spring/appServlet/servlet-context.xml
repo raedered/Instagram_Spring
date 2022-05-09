@@ -11,7 +11,8 @@
 	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
-
+	
+	<!-- mapping : 연결할때 사용. , /static/** static파일의 하위폴더까지 불러온다. -->
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/static/**" location="/static/" />
 
@@ -27,7 +28,7 @@
 		<beans:property name="username" value="root"></beans:property>
 		<beans:property name="password" value="toor"></beans:property>
 	</beans:bean>
-	
+	<!-- mappers폴더안에 .xml파일들을 찾아준다 -->
 	<beans:bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<beans:property name="dataSource" ref="dataSource"></beans:property>
 		<beans:property name="mapperLocations" value="classpath:mappers/*.xml"></beans:property>
@@ -36,7 +37,7 @@
 	<beans:bean id ="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
 		<beans:constructor-arg ref="sqlSessionFactory"></beans:constructor-arg>
 	</beans:bean>
-	
+	<!-- 객체들을 스켄해주는 역할 -->
 	<beans:bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<beans:property name="basePackage" value="com.instagram.domain"></beans:property>
 	</beans:bean>
